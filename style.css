@@ -1,160 +1,139 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
-section {
+section{
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding: 80px; /* Adjusted padding for better desktop view */
+    padding: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #f6f6f6; /* Light background color */
+    background: #fff;
 }
-
-header {
+header{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 5%; /* Adjusted padding for better mobile view */
+    padding: 20px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-header .logo {
+header .logo{
     position: relative;
     max-width: 80px;
 }
-
-header ul {
+header ul{
     position: relative;
     display: flex;
 }
-
-header ul li {
+header ul li{
     list-style: none;
 }
-
-header ul li a {
+header ul li a{
     display: inline-block;
-    color: #555; /* Dark text color for better readability */
+    color: #333;
     font-weight: 400;
-    margin-left: 20px; /* Reduced margin for better spacing */
+    margin-left: 40px;
     text-decoration: none;
-    transition: color 0.3s ease;
 }
-
-header ul li a:hover {
-    color: #017143; /* Highlight color on hover */
-}
-
-.content {
+.content{
     position: relative;
     width: 100%;
     display: flex;
-    flex-direction: column; /* Stacked layout for better mobile view */
-    align-items: center; /* Centered content for better mobile view */
+    justify-content: space-between;
+    align-items: center;
 }
-
-.content .textbox {
+.content .textbox{
     position: relative;
     max-width: 600px;
-    text-align: center; /* Center text for better mobile view */
 }
-
-.content .textbox h2 {
+.content .textbox h2{
     color: #333;
-    font-size: 3.5em; /* Adjusted font size for better mobile view */
+    font-size: 4em;
     line-height: 1.4em;
     font-weight: 500;
 }
-
-.content .textbox h2 span {
-    color: #017143; /* Highlight color */
+.content .textbox h2 span{
+    color: #017143;
     font-size: 1.2em;
     font-weight: 900;
 }
-
-.content .textbox p {
-    color: #555; /* Dark text color for better readability */
-    margin-top: 15px; /* Adjusted margin for better spacing */
+.content .textbox p{
+    color: #333;
 }
-
-.content .textbox a {
+.content .textbox a{
     display: inline-block;
     margin-top: 20px;
     padding: 8px 20px;
-    background: #017143; /* Highlight color */
-    color: #fff; /* White text color */
+    background: #017143;
+    color: #fff;
     border-radius: 40px;
     font-weight: 500;
     letter-spacing: 1px;
     text-decoration: none;
-    transition: background 0.3s ease;
 }
-
-.content .textbox a:hover {
-    background: #01472e; /* Darker background on hover */
-}
-
-.content .imgBox {
-    width: 100%; /* Full width on mobile */
+.content .imgBox{
+    width: 600px;
     display: flex;
-    justify-content: center; /* Centered content for better mobile view */
-    margin-top: 30px; /* Adjusted margin for better spacing */
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
 }
-
-.content .imgBox img {
-    max-width: 100%; /* Responsive image width */
+.content .imgBox img{
+    max-width: 340px;
 }
-
-.thumb {
-    position: relative; /* Relative position for better mobile view */
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
     display: flex;
-    justify-content: center; /* Centered content for better mobile view */
-    margin-top: 20px; /* Adjusted margin for better spacing */
 }
-
-.thumb li {
+.thumb li{
     list-style: none;
-    margin: 0 10px; /* Adjusted margin for better spacing */
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
 }
-
-.sci {
-    position: relative; /* Relative position for better mobile view */
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+.thumb li img{
+    max-width: 60px;
+}
+.sci{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
     display: flex;
-    justify-content: center; /* Centered content for better mobile view */
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 20px; /* Adjusted margin for better spacing */
 }
-
-.sci li {
+.sci li{
     list-style: none;
-    margin: 5px 0;
 }
-
-.sci li a {
+.sci li a{
     display: inline-block;
     margin: 5px 0;
     transform: scale(0.6);
     filter: invert(1);
 }
-
-.circle {
+.circle{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: #017143;
-    clip-path: circle(60% at center 20%); /* Adjusted clip-path for better mobile view */
+    clip-path: circle(600px at right 800px);
 }
